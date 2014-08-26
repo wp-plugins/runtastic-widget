@@ -6,7 +6,8 @@ Requires at least: 3.9.1
 Tested up to: 3.9.1
 Stable tag: 4.3
 
-Das ist die erste Version meines Runtastic Widgets.
+Das ist die erste Version meines Runtastic Widgets. 
+Zur Funktion wird das cURL PHP Modul benötigt.
 
 == Description ==
 
@@ -14,6 +15,8 @@ Das ist die erste Version meines Runtastic Widgets. Dieses Widget zeigt euch eur
 Dafür müsst Ihr nur den Installationsanweisungen folgen.
 
 Wenn du irgendwelche Probleme oder Verbesserungsvorschläge erstelle bitte ein Supporteintrag auf wordpress.org.
+
+Wichtig: Zur Funktion wird das cURL PHP Modul benötigt.
 
 == Installation ==
 
