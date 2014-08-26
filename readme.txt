@@ -11,12 +11,7 @@ Das ist die erste Version meines Runtastic Widgets.
 == Description ==
 
 Das ist die erste Version meines Runtastic Widgets. Dieses Widget zeigt euch eure letzte Runtastic Aktivität in eurem Blog an. (bis jetzt nur auf Deutsch)
-Dafür musst du folgendes tun:
-
-1. Plugin installieren
-2. Widget in eine Sitebar ziehen
-3. Logindaten eingeben und die Aktualisierungszeit setzen
-4. Genießen
+Dafür müsst Ihr nur den Installationsanweisungen folgen.
 
 Wenn du irgendwelche Probleme oder Verbesserungsvorschläge erstelle bitte ein Supporteintrag auf wordpress.org.
 
