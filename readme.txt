@@ -6,22 +6,9 @@ Requires at least: 3.9.1
 Tested up to: 3.9.1
 Stable tag: 4.3
 
-This is the first Version of my Runtastic Widget.(German)
-Das ist die erste Version meines Runtastic Widgets. (Deutsch)
+Das ist die erste Version meines Runtastic Widgets.
 
 == Description ==
-
-This is the first Version of my Runtastic Widget. This Widget shows your last Runtastic Activity on your Blog. (German only - till now)
-All you have to do is:
-
-1. Install the Plugin
-2. Drag the Widget to the Sidebar
-3. Insert your Logindata and set the refresh time
-4. Enjoy the Plugin
-
-If you have any problems or improvement suggestions feel free to comment the plugin on wordpress.org - as well if you only like it ;) 
-
-
 
 Das ist die erste Version meines Runtastic Widgets. Dieses Widget zeigt euch eure letzte Runtastic Aktivität in eurem Blog an. (bis jetzt nur auf Deutsch)
 Dafür musst du folgendes tun:
@@ -31,18 +18,34 @@ Dafür musst du folgendes tun:
 3. Logindaten eingeben und die Aktualisierungszeit setzen
 4. Genießen
 
-Wenn du irgendwelche Probleme oder Verbesserungsvorschläge hast schreibe bitte ein Kommentar auf wordpress.org - Natürlich auch wenn dir das Widget einfach nur gefällt ;)
+Wenn du irgendwelche Probleme oder Verbesserungsvorschläge erstelle bitte ein Supporteintrag auf wordpress.org.
 
 == Installation ==
 
-1. Unpack the entire contents of this plugin zip file into your `wp-content/plugins/` folder locally
-1. Upload to your site
-1. Navigate to `wp-admin/plugins.php` on your site (your WP plugin page)
-1. Activate this plugin
+1. Lade den 'runtastic-widget' in den Wordpress Plugin Ordner (wp-content/plugins/) hoch
+2. Öffne die Wordpress Administrationsoberfläche
+3. Aktiviere das Plugin
+4. Gehe in das Widget Menü und ziehe es in eine Sidebar
+5. Trage die Logindaten ein
+6. Webseite 2x aufrufen damit die Daten angezeigt werden
 
 == Frequently Asked Questions ==
 
-= Is this the final Version / Ist das die finale Version? =
+= Läuft das Widget wirklich nur unter Wordpress 3.9.1? =
+Nein ich denke nicht. Aber ich habe noch keine Möglichkeit gefunden das Widget in älteren Versionen zu testen und deshalb kann ich nur für die Version 3.9.1 sprechen. Theoretisch sollte das Widget auch unter älteren Versionen funktionieren.
 
-No i’m still working on a better version. / Nein ich arbeite kontinuierlich an einer besseren Version.
+
+= Ist das die finale Version? =
+
+Nein, ich arbeite kontinuierlich an einer besseren Version.
+
+== Screenshots ==
+1. Anzeige des Widgets
+2. Einstellung im Widget Menü
+
+== Changelog ==
+= 1.0 =
+* Plugin wurde erstmals veröffentlicht
+
+
 
