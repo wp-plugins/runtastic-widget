@@ -54,7 +54,8 @@
     private function formatPace($pace){
       $pace = explode(".",$pace);
       $Min = $pace[0];
-      $Sec = substr($pace[1]*60,0,2);
+      // Str_Replace um bei großen Zahlen das Komma zu entfernen
+      $Sec = substr(str_replace(".", "", $pace[1]*60),0,2);
       return $Min . ":" . $Sec ." min/km";
     }
     
