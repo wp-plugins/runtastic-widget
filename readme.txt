@@ -3,7 +3,7 @@ Contributors: danielpapenfuss
 Donate link: http://www.daniel-papenfuss.de/
 Tags: Runtastic Widget, Fitness Widget, Runtastic
 Requires at least: 3.9.1
-Tested up to: 3.9.1
+Tested up to: 4.0
 Stable tag: 4.3
 
 Das ist die erste Version meines Runtastic Widgets. 
