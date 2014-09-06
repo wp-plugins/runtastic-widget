@@ -3,20 +3,22 @@ Contributors: danielpapenfuss
 Donate link: http://www.daniel-papenfuss.de/
 Tags: Runtastic Widget, Fitness Widget, Runtastic
 Requires at least: 3.9.1
-Tested up to: 4.0
-Stable tag: 4.3
+Tested up to: 3.9.1
+Stable tag: 1.1
 
-Das ist die erste Version meines Runtastic Widgets. 
-Zur Funktion wird das cURL PHP Modul benötigt.
+Das ist die erste Version meines Runtastic Widgets.
 
 == Description ==
 
 Das ist die erste Version meines Runtastic Widgets. Dieses Widget zeigt euch eure letzte Runtastic Aktivität in eurem Blog an. (bis jetzt nur auf Deutsch)
-Dafür müsst Ihr nur den Installationsanweisungen folgen.
+Dafür musst du folgendes tun:
+
+1. Plugin installieren
+2. Widget in eine Sitebar ziehen
+3. Logindaten eingeben und die Aktualisierungszeit setzen
+4. Genießen
 
 Wenn du irgendwelche Probleme oder Verbesserungsvorschläge erstelle bitte ein Supporteintrag auf wordpress.org.
-
-Wichtig: Zur Funktion wird das cURL PHP Modul benötigt.
 
 == Installation ==
 
@@ -25,7 +27,7 @@ Wichtig: Zur Funktion wird das cURL PHP Modul benötigt.
 3. Aktiviere das Plugin
 4. Gehe in das Widget Menü und ziehe es in eine Sidebar
 5. Trage die Logindaten ein
-6. Webseite 2x aufrufen damit die Daten angezeigt werden
+6. Prüfen ob alles funktioniert
 
 == Frequently Asked Questions ==
 
@@ -42,6 +44,10 @@ Nein, ich arbeite kontinuierlich an einer besseren Version.
 2. Einstellung im Widget Menü
 
 == Changelog ==
+= 1.1 = 
+* Fehler behoben welcher eine leere Zeile anzeigte wenn keine Map verfügbar war 
+* Englische Sprache hinzugefügt
+* Einstellungsmöglichkeiten hinzugefügt (Größe der Anzeige & Größe der Map)
 = 1.0 =
 * Plugin wurde erstmals veröffentlicht
 

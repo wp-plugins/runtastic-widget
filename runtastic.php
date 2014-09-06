@@ -36,9 +36,46 @@ class Runtastic_Widget extends WP_Widget{
         $Username = esc_attr($instance['username']);
         $Password = esc_attr($instance['password']);
         $CacheRefresh = esc_attr($instance['cache_refresh']);
-        echo '<p>Benutzername: <input type="text" class="widefat" name="' . $this->get_field_name('username') . '" value="' . $Username . '">';
-        echo '<p>Passwort: <input type="password" class="widefat" name="' . $this->get_field_name('password') . '" value="' . $Password . '">';
-        echo '<p>Cache Refresh (in Minuten): <input type="text" class="widefat" name="' . $this->get_field_name('cache_refresh') . '" value="' . $CacheRefresh . '">';
+        $DisplayLanguage = esc_attr($instance['display_language']);
+        $Table_Width = esc_attr($instance['table_width']);
+        $Map_Height = esc_attr($instance['map_height']);
+        $Map_Width = esc_attr($instance['map_width']);
+        
+        if(empty($Table_Width)){
+            $Table_Width = "165";
+        }
+        if(empty($Map_Height)){
+            $Map_Height = "125";
+        }
+        if(empty($Map_Width)){
+            $Map_Width = "150";
+        }
+        echo '<p>Anzeigesprache/Display Language:<select name="'. $this->get_field_name('display_language') .'" id="'. $this->get_field_id('select') .'" class="widefat">';
+        if($DisplayLanguage == "Deutsch" OR $DisplayLanguage == "German"){
+            $options = array('Deutsch','Englisch');
+            $DisplayText = array("Benutzername","Passwort","Cache Refresh (in Minuten)", "Breite der Anzeige (in Pixel)","Map Höhe (in Pixel)","Map Breite (in Pixel)");
+        }else{
+            $options = array('German','English');
+            $DisplayText = array("Username","Password","Cache Refresh (Minutes)" , "Display Width (Pixel)","Map Hight (Pixel)","Map Width (Pixel)");
+        }
+        foreach($options as $option){
+            If(($DisplayLanguage == "Deutsch" OR $DisplayLanguage == "German")AND($option == "Deutsch" OR $option == "German")){
+                $selected = 'selected="selected"';
+            }elseif(($DisplayLanguage == "Englisch" OR $DisplayLanguage == "English")AND($option == "Englisch" OR $option == "English")){
+                $selected = 'selected="selected"';
+            }else{
+                $selected = '';
+            }
+            echo '<option value="' . $option . '" id="' . $option . '"', $selected , '>', $option, '</option>';
+        }
+        echo '</select></p>';
+        echo '<p>'.$DisplayText[0].': <input type="text" class="widefat" name="' . $this->get_field_name('username') . '" value="' . $Username . '">';
+        echo '<p>'.$DisplayText[1].': <input type="password" class="widefat" name="' . $this->get_field_name('password') . '" value="' . $Password . '">';
+        echo '<p>'.$DisplayText[2].': <input type="text" class="widefat" name="' . $this->get_field_name('cache_refresh') . '" value="' . $CacheRefresh . '">';
+       
+        echo '<p>'.$DisplayText[3].': <input type="text" class="widefat" name="' . $this->get_field_name('table_width') . '" value="' . $Table_Width . '">';
+        echo '<p>'.$DisplayText[4].': <input type="text" class="widefat" name="' . $this->get_field_name('map_height') . '" value="' . $Map_Height . '">';
+        echo '<p>'.$DisplayText[5].': <input type="text" class="widefat" name="' . $this->get_field_name('map_width') . '" value="' . $Map_Width . '">';
     }
     
     function update($new_instance, $old_instance) {
@@ -46,6 +83,12 @@ class Runtastic_Widget extends WP_Widget{
         $instance['username'] = strip_tags($new_instance['username']);
         $instance['password'] = strip_tags($new_instance['password']);
         $instance['cache_refresh'] = strip_tags($new_instance['cache_refresh']);
+        $instance['display_language'] = strip_tags($new_instance['display_language']);
+        $instance['table_width'] = strip_tags($new_instance['table_width']);
+        $instance['map_height'] = strip_tags($new_instance['map_height']);
+        $instance['map_width'] = strip_tags($new_instance['map_width']);
+        // Vorlage
+        //$instance[''] = strip_tags($new_instance['']);
         return $instance;
     }
     
@@ -53,11 +96,16 @@ class Runtastic_Widget extends WP_Widget{
         if(!empty($instance['username']) &&  !empty($instance['password'])){
             wp_enqueue_style('test', plugin_dir_url( __FILE__ ) . 'style.css');
             global $wpdb;
+            include_once ('Update_Cache.php');
             echo $args['before_widget'];
             $LastActivity = $this->GetLastActivityFromCacheDB();
-            include("anzeige.php");
+            if($instance['display_language'] == "Englisch" OR $instance['display_language'] == "English"){
+                include('anzeige_Englisch.php'); 
+            }else{
+                include('anzeige_Deutsch.php'); 
+            }           
             echo $args['after_widget'];
-            include_once ('Update_Cache.php');
+            
         } 
    }
     

@@ -2,10 +2,10 @@
   include_once("class.runtastic.php");
   
   class Runtastic_Controller{
-    private $Runtastic, $Activities, $Username,$Password, $Map_Height, $Map_Width;
+    private $Runtastic, $Activities, $Username,$Password, $Map_Height, $Map_Width, $Display_Language;
     public $error = false;
     
-    public function __construct($username,$password, $Map_Height =  "125" , $Map_Width ="150") {
+    public function __construct($username,$password,$Display_Language, $Map_Height =  "125" , $Map_Width ="150") {
       $this->Runtastic = New Runtastic();
       $this->Runtastic->setUsername($username);
       $this->Runtastic->setPassword($password);
@@ -17,12 +17,13 @@
     	}
         $this->Map_Height = $Map_Height;
         $this->Map_Width = $Map_Width;
+        $this->Display_Language = $Display_Language;
     }
 
     
     public function GetLastActivity(){ 
      $data = array();
-      $data["type"] = $this->formatType($this->Activities[0]->type_id);
+      $data["type"] = $this->formatType($this->Activities[0]->type_id, $this->Display_Language);
       $data["duration"] = $this->formatDuration($this->Activities[0]->duration);
       $data["distance"] = $this->formatDistance($this->Activities[0]->distance);
       $data["pace"] = $this->formatPace($this->Activities[0]->pace);
@@ -32,8 +33,12 @@
     
     
     
-    private function formatType($type){
-      include_once('RuntasticIDs.php');
+    private function formatType($type, $display_language){
+      if($display_language == "Englisch" OR $display_language == "English"){
+                include('RuntasticIDs_Englisch.php'); 
+    }else{
+        include('RuntasticIDs_Deutsch.php'); 
+    } 
       
       if(empty($RuntasticIDs[$type])){
         return "Nicht defininiert";
