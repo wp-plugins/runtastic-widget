@@ -44,10 +44,6 @@
 		private $doc;
 		private $timeout;
 		
-        public function getRawData(){
-            return $this->runtasticRawData;  
-            //return curl_error($this->ch);
-        }
 		public function __construct() {
 			libxml_use_internal_errors(true);
 			$this->loginUrl = "https://www.runtastic.com/en/d/users/sign_in.json";

@@ -2,43 +2,40 @@
   include_once("class.runtastic.php");
   
   class Runtastic_Controller{
-    private $Runtastic, $Activities, $Username,$Password, $Map_Height, $Map_Width, $Display_Language;
+    private $runtastic, $activities, $map_height, $map_width, $display_language;
     public $error = false;
     
-    public function __construct($username,$password,$Display_Language, $Map_Height =  "125" , $Map_Width ="150") {
-      $this->Runtastic = New Runtastic();
-      $this->Runtastic->setUsername($username);
-      $this->Runtastic->setPassword($password);
-    	$this->Runtastic->setTimeout(30);
-    	if ($this->Runtastic->login()) {
-    	  $this->Activities = $this->Runtastic->getActivities();
+    public function __construct($username,$password,$display_language, $map_height =  "125" , $map_width ="150") {
+      $this->runtastic = New Runtastic();
+      $this->runtastic->setUsername($username);
+      $this->runtastic->setPassword($password);
+    	$this->runtastic->setTimeout(30);
+    	if ($this->runtastic->login()) {
+    	  $this->activities = $this->runtastic->getActivities();
     	}else{
     	  $this->error = true;
     	}
-        $this->Map_Height = $Map_Height;
-        $this->Map_Width = $Map_Width;
-        $this->Display_Language = $Display_Language;
+        $this->map_height = $map_height;
+        $this->map_width = $map_width;
+        $this->display_language = $display_language;
     }
 
     
-    public function GetLastActivity(){ 
+    public function get_last_activity(){ 
      $data = array();
-      $data["type"] = $this->formatType($this->Activities[0]->type_id, $this->Display_Language);
-      $data["duration"] = $this->formatDuration($this->Activities[0]->duration);
-      $data["distance"] = $this->formatDistance($this->Activities[0]->distance);
-      $data["pace"] = $this->formatPace($this->Activities[0]->pace);
-      $data["map"] = $this->formatMap((string)$this->Activities[0]->map_url);
+      $data["type"] = $this->format_type($this->activities[0]->type_id, $this->display_language);
+      $data["duration"] = $this->format_duration($this->activities[0]->duration);
+      $data["distance"] = $this->format_distance($this->activities[0]->distance);
+      $data["pace"] = $this->format_pace($this->activities[0]->pace);
+      $data["map"] = $this->format_map((string)$this->activities[0]->map_url);
       return $data;
     }
     
     
     
-    private function formatType($type, $display_language){
-      if($display_language == "Englisch" OR $display_language == "English"){
-                include('RuntasticIDs_Englisch.php'); 
-    }else{
-        include('RuntasticIDs_Deutsch.php'); 
-    } 
+    private function format_type($type, $display_language){
+    include('RuntasticIDs.php'); 
+    
       
       if(empty($RuntasticIDs[$type])){
         return "Nicht defininiert";
@@ -48,15 +45,15 @@
           
     }
     
-    private function formatDuration($duration){
+    private function format_duration($duration){
       return gmdate("H:i:s",$duration/1000);
     }
     
-    private function formatDistance($distance){
+    private function format_distance($distance){
       return round($distance/1000,2) . " km";
     }
     
-    private function formatPace($pace){
+    private function format_pace($pace){
       $pace = explode(".",$pace);
       $Min = $pace[0];
       // Str_Replace um bei großen Zahlen das Komma zu entfernen
@@ -64,12 +61,12 @@
       return $Min . ":" . $Sec ." min/km";
     }
     
-    private function formatMap($map){
-      $map = str_replace("width=50","width=" . $this->Map_Width,$map);
-      $map = str_replace("height=70", "height=" . $this->Map_Height, $map);
+    private function format_map($map){
+      $map = str_replace("width=50","width=" . $this->map_width,$map);
+      $map = str_replace("height=70", "height=" . $this->map_height, $map);
       
-      $strLength = strlen($map)-1;
-      $map = substr($map,2,$strLength);  
+      $str_length = strlen($map)-1;
+      $map = substr($map,2,$str_length);  
       return "http://" . $map;
     }
     

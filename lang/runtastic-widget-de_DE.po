@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.6.9\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
+
+#. Text in echo
+#: widget.php:13
+msgid "Distance"
+msgstr "Distanz"
+
+#. Text in echo
+#: widget.php:17
+msgid "Duration"
+msgstr "Dauer"
+
+#. Text in echo
+#: widget.php:21
+msgid "Pace"
+msgstr "Pace"
+
+#. Text in echo
+#: widget.php:9
+msgid "Type"
+msgstr "Typ"
+
+#. Text in function
+#: admin.php:1
+msgid "Cache Refresh (Minutes)"
+msgstr "Cache Aktualisierung (Minuten)"
+
+#. Text in function
+#: admin.php:1
+msgid "Map Height (Pixel)"
+msgstr "Map Höhe (Pixel)"
+
+#. Text in function
+#: admin.php:1
+msgid "Map Width (Pixel)"
+msgstr "Map Breite (Pixel)"
+
+#. Text in function
+#: admin.php:1
+msgid "Password"
+msgstr "Passwort"
+
+#. Text in function
+#: admin.php:1
+msgid "Table Width (Pixel)"
+msgstr "Tabellen Bereite (Pixel)"
+
+#. Text in function
+#: admin.php:1
+msgid "Username"
+msgstr "Benutzername"

@@ -3,8 +3,8 @@ Contributors: danielpapenfuss
 Donate link: http://www.daniel-papenfuss.de/
 Tags: Runtastic Widget, Fitness Widget, Runtastic
 Requires at least: 3.9.1
-Tested up to: 3.9.1
-Stable tag: 1.1
+Tested up to: 4.0
+Stable tag: 1.2
 
 Das ist die erste Version meines Runtastic Widgets.
 
@@ -44,6 +44,9 @@ Nein, ich arbeite kontinuierlich an einer besseren Version.
 2. Einstellung im Widget Menü
 
 == Changelog ==
+= 1.2 = 
+* Getestet unter Wordpress 4.0
+* Übersetzung ist nun durch Wordpress Funktionen umgesetzt (Deutsch & Englisch vorhanden)
 = 1.1 = 
 * Fehler behoben welcher eine leere Zeile anzeigte wenn keine Map verfügbar war 
 * Englische Sprache hinzugefügt

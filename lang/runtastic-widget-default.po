@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in echo
+#: widget.php:13
+msgid "Distance"
+msgstr ""
+
+#. Text in echo
+#: widget.php:17
+msgid "Duration"
+msgstr ""
+
+#. Text in echo
+#: widget.php:21
+msgid "Pace"
+msgstr ""
+
+#. Text in echo
+#: widget.php:9
+msgid "Type"
+msgstr ""
+
+#. Text in function
+#: admin.php:1
+msgid "Cache Refresh (Minutes)"
+msgstr ""
+
+#. Text in function
+#: admin.php:1
+msgid "Map Height (Pixel)"
+msgstr ""
+
+#. Text in function
+#: admin.php:1
+msgid "Map Width (Pixel)"
+msgstr ""
+
+#. Text in function
+#: admin.php:1
+msgid "Password"
+msgstr ""
+
+#. Text in function
+#: admin.php:1
+msgid "Table Width (Pixel)"
+msgstr ""
+
+#. Text in function
+#: admin.php:1
+msgid "Username"
+msgstr ""
