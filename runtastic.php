@@ -100,9 +100,9 @@ class Runtastic_Widget extends WP_Widget{
             echo $args['before_widget'];
             $LastActivity = $this->GetLastActivityFromCacheDB();
             if($instance['display_language'] == "Englisch" OR $instance['display_language'] == "English"){
-                include('anzeige_Englisch.php'); 
+                include('lang/anzeige_Englisch.php'); 
             }else{
-                include('anzeige_Deutsch.php'); 
+                include('lang/anzeige_Deutsch.php'); 
             }           
             echo $args['after_widget'];
             
