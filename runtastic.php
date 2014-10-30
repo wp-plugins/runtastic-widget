@@ -42,12 +42,12 @@ class Runtastic_Widget extends WP_Widget{
         $instance['username'] = strip_tags($new_instance['username']);
         $instance['password'] = strip_tags($new_instance['password']);
         $instance['cache_refresh'] = strip_tags($new_instance['cache_refresh']);
+        $instance['color'] = strip_tags($new_instance['color']);
         $instance['table_width'] = strip_tags($new_instance['table_width']);
         $instance['map_height'] = strip_tags($new_instance['map_height']);
         $instance['map_width'] = strip_tags($new_instance['map_width']);
         // Vorlage
         //$instance[''] = strip_tags($new_instance[''])
-
         return $instance;
     }
 
@@ -117,9 +117,21 @@ class Runtastic_Widget extends WP_Widget{
                 }
             }while($i < 3);
             $last_activity_json = json_encode($last_activity);
-            $wpdb->query("UPDATE `wp_RuntasticWidgetCache` SET `json_data` = '" . $last_activity_json . "', `timestamp` = '" . time() . "'");
+            $wpdb->query("UPDATE `" . $wpdb->prefix . "RuntasticWidgetCache` SET `json_data` = '" . $last_activity_json . "', `timestamp` = '" . time() . "'");
         }
     }
     
+    private function load_javascript(){
+        if( is_admin() ){
+            // Add the color picker css file       
+            wp_enqueue_style( 'wp-color-picker' ); 
+
+            // Include our custom jQuery file with WordPress Color Picker dependency
+            wp_enqueue_script( 'custom-script-handle', plugins_url( 'custom-script.js', __FILE__ ), array( 'wp-color-picker' ), false, true ); 
+        }
+        
+    }
+    
 }
+
 ?>

@@ -4,7 +4,7 @@ Donate link: http://www.daniel-papenfuss.de/
 Tags: Runtastic Widget, Fitness Widget, Runtastic
 Requires at least: 3.9.1
 Tested up to: 4.0
-Stable tag: 1.2
+Stable tag: 1.3
 
 Das ist die erste Version meines Runtastic Widgets.
 
@@ -41,9 +41,13 @@ Nein, ich arbeite kontinuierlich an einer besseren Version.
 
 == Screenshots ==
 1. Anzeige des Widgets
-2. Einstellung im Widget Menü
+2. Einstellung im Widget Menü (ohne erweiterte Optionen)
+3. Einstellung im Widget Menü (mit erweiterte Optionen)
 
 == Changelog ==
+= 1.3 = 
+* Rahmenfarbe des Plugins ist über die Widget Einstellungen änderbar
+* Kosmetische Anpassungen am Quellcode
 = 1.2 = 
 * Getestet unter Wordpress 4.0
 * Übersetzung ist nun durch Wordpress Funktionen umgesetzt (Deutsch & Englisch vorhanden)

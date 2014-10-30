@@ -1,6 +1,6 @@
 <h1 class="widget-title">Meine letzte Aktivität</h1>
 <!-- Widget erstellt von Daniel Papenfuß (www.daniel-papenfuss.de) -->
-<div id="RuntasticWidget" style="width:<?php echo $instance['table_width'] ?>px;">
+<div id="RuntasticWidget" style="width:<?php echo $instance['table_width'] ?>px;border-color:<?php echo $instance['color'] ?>;">
   <table>
     <tr>
       <td><?php _e('Type','runtastic-widget'); ?>:</td>
