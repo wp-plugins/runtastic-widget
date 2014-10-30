@@ -3,7 +3,7 @@
 Plugin Name: Runtastic Widget
 Plugin URI: http://www.daniel-papenfuss.de
 Description: Das Widget ermöglicht es dir in deinem Blog deine letzte Runtastic Aktivität anzeigen zu lassen
-Version: 1.2
+Version: 1.3
 Author: Daniel Papenfuß
 Author URI: http://www.daniel-papenfuss.de
 License: GPL3
