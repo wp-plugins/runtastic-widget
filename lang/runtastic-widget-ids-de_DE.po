@@ -1,0 +1,308 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.6.9\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Aerobic"
+msgstr "Aerobic"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "American Football"
+msgstr "American Football"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Back Country Skiing"
+msgstr "Skitouren gehen"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Badminton"
+msgstr "Badminton"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Baseball"
+msgstr "Baseball"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Basketball"
+msgstr "Basketball"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Biathlon"
+msgstr "Biathlon"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Climbing"
+msgstr "Klettern"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Cross Country Skiing"
+msgstr "Langlaufen"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Crossfit"
+msgstr "Crossfit"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Curling"
+msgstr "Curling"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Cycling"
+msgstr "Radfahren"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Dancing"
+msgstr "Tanzen"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Diving"
+msgstr "Tauchen"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Elliptical"
+msgstr "Ellipsentrainer"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Ergometer"
+msgstr "Ergometer"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Golfing"
+msgstr "Golfen"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Gymnastics"
+msgstr "Gymnastik"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Handball"
+msgstr "Handball"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Handbike"
+msgstr "Handbiking"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Hiking"
+msgstr "Wandern"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Ice Hockey"
+msgstr "Eishockey"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Ice Skating"
+msgstr "Eislaufen"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Kayaking"
+msgstr "Kajaking"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Kite Surfing"
+msgstr "Kite Surfen"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Martial Arts"
+msgstr "Kampfsport"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Motorbiking"
+msgstr "Motorradfahren"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Mountain Biking"
+msgstr "Mountainbiking"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Nordic Walking"
+msgstr "Nordic Walking"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Other"
+msgstr "Anderes"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Paragliding"
+msgstr "Paragleiten"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Pilates"
+msgstr "Pilates"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Race Cycling"
+msgstr "Rennradfahren"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Riding"
+msgstr "Reiten"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Rowing"
+msgstr "Rudern"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Rugby"
+msgstr "Rugby"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Running"
+msgstr "Laufen"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Sailing"
+msgstr "Segeln"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Skateboarding"
+msgstr "Skateboarden"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Skating"
+msgstr "Inline Skaten"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Skiing"
+msgstr "Skifahren"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Sledding"
+msgstr "Schlittenfahren"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Snow Boarding"
+msgstr "Snowboarding"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Soccer"
+msgstr "Fußball"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Spinning"
+msgstr "Spinnig"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Squash"
+msgstr "Squash"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Standup Paddling"
+msgstr "Stehpaddeln"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Strength Training"
+msgstr "Krafttraining"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Surfing"
+msgstr "Surfen"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Swimming"
+msgstr "Schwimmen"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Table Tennis"
+msgstr "Tischtennis"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Tennis"
+msgstr "Tennis"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Treadmill"
+msgstr "Laufband"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Volleyball"
+msgstr "Volleyball"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Wake Boarding"
+msgstr "Wakeboarden"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Walking"
+msgstr "Gehen"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Windsurfing"
+msgstr "Windsurfen"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Yoga"
+msgstr "Yoga"
+
+#. Text in function
+#: RuntasticIDs.php:1
+msgid "Zumba"
+msgstr "Zumba"
