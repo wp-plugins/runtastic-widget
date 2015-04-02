@@ -3,7 +3,7 @@
 Plugin Name: Runtastic Widget
 Plugin URI: http://www.daniel-papenfuss.de
 Description: Das Widget ermöglicht es dir in deinem Blog deine letzte Runtastic Aktivität anzeigen zu lassen
-Version: 1.3
+Version: 1.4
 Author: Daniel Papenfuß
 Author URI: http://www.daniel-papenfuss.de
 License: GPL3
@@ -39,6 +39,7 @@ class Runtastic_Widget extends WP_Widget{
     
     function update($new_instance, $old_instance) {
         $instance = $old_instance;
+        $instance['title'] = strip_tags($new_instance['title']);
         $instance['username'] = strip_tags($new_instance['username']);
         $instance['password'] = strip_tags($new_instance['password']);
         $instance['cache_refresh'] = strip_tags($new_instance['cache_refresh']);
@@ -46,6 +47,7 @@ class Runtastic_Widget extends WP_Widget{
         $instance['table_width'] = strip_tags($new_instance['table_width']);
         $instance['map_height'] = strip_tags($new_instance['map_height']);
         $instance['map_width'] = strip_tags($new_instance['map_width']);
+        $instance['display_unit'] = strip_tags($new_instance['display_unit']);
         // Vorlage
         //$instance[''] = strip_tags($new_instance[''])
         return $instance;
@@ -58,9 +60,7 @@ class Runtastic_Widget extends WP_Widget{
             $this->update_cache($instance);
             echo $args['before_widget'];
             $last_activity = $this->get_last_activity_from_cache_db();
-
             include('forms/widget.php'); 
-                
             echo $args['after_widget'];
             
         } 
@@ -109,8 +109,8 @@ class Runtastic_Widget extends WP_Widget{
             global $wpdb;
             $i = 0;
             do{
-                $runtastic = New Runtastic_Controller($instance['username'],$instance['password'], $instance['display_language'], $instance['map_height'], $instance['map_width']);
-                $last_activity = $runtastic->get_last_activity();
+                $runtastic = New Runtastic_Controller($instance['username'],$instance['password'], $instance['display_language'], $instance['map_height'], $instance['map_width'], $instance['display_unit']);
+                $last_activity = $runtastic->get_last_activity(§display_unit);
                 $i++;
                 if($last_activity['distance'] != "0 km" AND $last_activity['duration'] != "00:00:00"){
                     $i = 3;
