@@ -3,8 +3,8 @@ Contributors: danielpapenfuss
 Donate link: http://www.daniel-papenfuss.de/
 Tags: Runtastic Widget, Fitness Widget, Runtastic
 Requires at least: 3.9.1
-Tested up to: 4.0
-Stable tag: 1.3
+Tested up to: 4.1
+Stable tag: 1.4
 
 Das ist die erste Version meines Runtastic Widgets.
 
@@ -45,6 +45,8 @@ Nein, ich arbeite kontinuierlich an einer besseren Version.
 3. Einstellung im Widget Menü (mit erweiterte Optionen)
 
 == Changelog ==
+= 1.4 = 
+* Aktualisierung der PHP Runtastic Api
 = 1.3 = 
 * Rahmenfarbe des Plugins ist über die Widget Einstellungen änderbar
 * Kosmetische Anpassungen am Quellcode
